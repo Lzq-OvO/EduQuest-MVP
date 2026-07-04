@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-title: "Plus Jakarta Sans", "Be Vietnam Pro", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Chunky tactile Duolingo-style buttons */
+.btn-chunky {
+  transition: transform 0.08s cubic-bezier(0.2, 0.8, 0.2, 1), border-bottom-width 0.08s ease, margin-bottom 0.08s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-chunky:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px !important;
+  margin-bottom: 3px;
+}
+
+/* Thick-bordered input fields */
+.input-chunky {
+  border: 2px solid #d8dadd;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+.input-chunky:focus {
+  border-color: #2b6c00;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(88, 204, 2, 0.2);
+}
+
+/* Progress bar cylindrical glass-like shimmer */
+.progress-bar-shimmer {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0) 35%);
+}
+
+/* Simple keyframe animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
