@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🎓 EduQuest (MVP) - AI 苏格拉底式启发学习平台
 
-# Run and deploy your AI Studio app
+![EduQuest Banner](https://img.shields.io/badge/Status-MVP-green) ![React](https://img.shields.io/badge/React-18-blue) ![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC) ![Vite](https://img.shields.io/badge/Vite-5-646CFF)
 
-This contains everything you need to run your app locally.
+EduQuest 是一个基于 **苏格拉底式启发教学法** 理念设计的 AI 智能辅导平台。我们相信：最好的教育不是直接给出答案，而是引导学生思考。在这里，AI 导师不会直接替你做题，而是通过不断追问、类比和引导，帮你构建自己的知识体系，彻底告别“一看就会，一做就废”！
 
-View your app in AI Studio: https://ai.studio/apps/d00d11ad-e4b4-405d-9f19-8ab275d7a415
+## ✨ 核心亮点特性
 
-## Run Locally
+- **🧠 苏格拉底式对话引擎**：内置严格控制的大模型指令，坚守“不直接给答案”底线，通过多轮反问与引导帮助你找到解题思路。
+- **📸 丝滑的草稿本上传**：支持直接使用快捷键 `Ctrl+V` 粘贴题目截图或点击相册上传你的手写草稿，实现真正的多模态学习互动！
+- **🏆 游戏化学习体验**：
+  - **连击徽章**：深度思考连击，鼓励连续答对问题。
+  - **经验值与宝箱系统**：每次有效学习积累 XP，获取宝箱奖励，点亮动态进度环。
+  - **沉浸式成就殿堂**：记录你一路走来的每一滴汗水。
+- **📚 高中全学科覆盖**：涵盖语文、数学、英语、物理、化学、生物、地理、历史、政治 9 大基础学科，每个学科配备专属定制化开场白。
+- **📉 智能“深度错题本”**：当连续回答错误超过设定阈值（如连续 7 次答错），系统将自动阻断无效练习，记录该知识点进入深刻错题本，并建议寻求线下名师干预，防止陷入思维死胡同。
 
-**Prerequisites:**  Node.js
+## 🚀 本地运行指南
 
+1. **环境准备**：确保你的电脑已经安装了 Node.js 环境。
+2. **安装依赖**：
+   ```bash
+   npm install
+   ```
+3. **启动服务**：
+   ```bash
+   npm run dev
+   ```
+   然后打开浏览器访问终端中提示的本地地址（默认前后端同开，提供全栈体验）。
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ 技术栈
+
+- **前端 UI**：React 18, TypeScript, Tailwind CSS, Lucide React, Framer Motion
+- **后端架构**：Express, Vite Middleware, OpenAI Node SDK
+- **构建工具**：Vite
+
+---
+*本项目为 MVP (最小可行性产品) 阶段演示原型，由热爱教育与 AI 的开发者精心打造。感谢你的体验，让我们一起重新定义智能时代的教育模式！*
